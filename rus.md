@@ -588,7 +588,8 @@ JavaScript отключён, что вероятно, [является ошиб
         var x = canvas.width / 2;
         ctx.fillText("FIRE", x, 325);
  
-        // используем композицию чтобы фоновое изображение отрисовывалось только там, где отрисован текст
+        // используем композицию, чтобы фоновое изображение
+        // отрисовывалось только там, где отрисован текст
         ctx.globalCompositeOperation = "source-in";
         ctx.drawImage(img, 0, 0, img.width, img.height, 0, 0, canvas.width, canvas.height);
     }
